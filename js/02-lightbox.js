@@ -1,5 +1,5 @@
 import { galleryItems } from './gallery-items.js';
-// Change code below this line
+
 
 console.log(galleryItems);
 
@@ -28,3 +28,16 @@ function onImageClick(event) {
 
     let lightbox = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 150, spinner: true });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
