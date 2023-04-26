@@ -14,20 +14,8 @@ const markup = galleryItems
 
 galleryEl.insertAdjacentHTML('afterbegin', markup)
 
+ let lightbox = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 150, spinner: true });
 
-
-galleryEl.addEventListener('click', onImageClick)
-
-function onImageClick(event) {
-
-    event.preventDefault();
-
-    if (event.target.nodeName !== 'IMG') {
-        return;
-    }
-
-    let lightbox = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 150, spinner: true });
-}
 
 
 
